@@ -40,7 +40,6 @@
     justify-content: flex-end;
     -webkit-align-items: center;
     -webkit-justify-content: flex-end;
-    position: relative;
     background-color: #4e4e4e;
     flex-shrink: 0;
     -webkit-flex-shrink: 0;
@@ -55,7 +54,6 @@
     justify-content: center;
     flex-direction: column;
 
-    display: -webkit-flex;
     -webkit-justify-content: center;
     -webkit-flex-direction: column;
 
@@ -157,7 +155,6 @@
     font-size: 11px;
     text-transform: uppercase;
     margin: 0;
-    width: 35%;
     font-weight: 700;
     text-decoration: none;
     transform: translateY(25%);
@@ -186,6 +183,8 @@
     display: inline-block;
     padding: 11px 15px;
     position: relative;
+    background: #ffff35;
+
 }
 
 .carousel__arrow:nth-child(1):after {
@@ -222,9 +221,6 @@
     transform: translateX(0);
 }
 
-.carousel__arrow {
-    background: #ffff35;
-}
 
 .parrafo {
     columns: 200px 2;
