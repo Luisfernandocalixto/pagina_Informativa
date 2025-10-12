@@ -1,27 +1,27 @@
-const nav = document.querySelector('#nav') // selector para nav => id='nav'
-const abrir = document.querySelector('#abrir') // abrir el sidebar => id="abrir"
-const cerrar = document.querySelector('#cerrar') // cerrar el sidebar => id="cerrar"
-const clickQuestions = document.querySelectorAll('.articulo__pregunta') // abrir la seccion de cada pregunta => id="articulo__pregunta"
+const nav = document.querySelector('#nav') // selector for nav => id='nav'
+const openMenu = document.querySelector('#openMenu') // open Menu sidebar => id="openMenu"
+const closeMenu = document.querySelector('#closeMenu') // close Menu sidebar => id="closeMenu"
+const clickQuestions = document.querySelectorAll('.article__question') // open the section of an question => id="article__question"
 
 
-abrir.addEventListener('click', () => {
+openMenu.addEventListener('click', () => {
     nav.classList.add("visible");
 })
-cerrar.addEventListener('click', () => {
+closeMenu.addEventListener('click', () => {
     nav.classList.remove("visible");
 })
 
 
-/* Preguntas */
+/* Questions */
 clickQuestions.forEach(clickQuestion => {
 
     clickQuestion.addEventListener('click', () => {
         const arrow = clickQuestion.children[0];
-        arrow.classList.toggle('articulo__arrow--rotate');
+        arrow.classList.toggle('article__arrow--rotate');
 
         const answerContainer = clickQuestion.nextElementSibling;
 
-        answerContainer.classList.toggle('articulo__content--mostrar');
+        answerContainer.classList.toggle('article__content--show');
 
     })
 
@@ -30,20 +30,20 @@ clickQuestions.forEach(clickQuestion => {
 
 $(function () {
     $('.carousel-item').eq(0).addClass('active');
-    var total = $('.carousel-item').length;
-    var current = 0;
+    let total = $('.carousel-item').length;
+    let current = 0;
     $('#moveRight').on('click', function () {
-        var next = current;
+        let next = current;
         current = current + 1;
         setSlide(next, current);
     });
     $('#moveLeft').on('click', function () {
-        var prev = current;
+        let prev = current;
         current = current - 1;
         setSlide(prev, current);
     });
     function setSlide(prev, next) {
-        var slide = current;
+        let slide = current;
         if (next > total - 1) {
             slide = 0;
             current = 0;

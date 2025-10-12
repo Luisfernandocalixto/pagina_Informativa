@@ -37,15 +37,15 @@ header {
     font-weight: 500;
 }
 
-.abrir-menu,
-.cerrar-menu {
+.open-menu,
+.close-menu {
     display: none;
 }
 
 @media screen and (max-width: 840px) {
 
-    .abrir-menu,
-    .cerrar-menu {
+    .open-menu,
+    .close-menu {
         display: block;
         border: 0;
         font-size: 1.25rem;
@@ -53,11 +53,11 @@ header {
         cursor: pointer;
     }
 
-    .abrir-menu {
+    .open-menu {
         color: #1c1c1c;
     }
 
-    .cerrar-menu {
+    .close-menu {
         color: #ececec;
     }
 
@@ -96,7 +96,7 @@ h1 {
     font-size: 30px;
 }
 
-.descripcion-Periodo {
+.description-Periode {
     display: grid;
     justify-items: center;
     text-align: justify;
@@ -105,12 +105,12 @@ h1 {
     -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
-.descripcion-Periodo h1,
+.description-Periode h1,
 p {
     padding: 20px;
 }
 
-.descripcion {
+.description {
     margin: 0 auto;
     max-width: 800px;
     display: grid;
@@ -120,20 +120,19 @@ p {
     -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
-.descripcion h1,
+.description h1,
 p,
 span {
     margin: 10px;
     text-align: justify;
 }
 
-.imagen-mural img {
+.image-mural img {
     width: 300px;
 
 }
 
-.descripcion span {
-    color: #847f7fd0;
+.description span {
     font-style: italic;
 }
 
@@ -144,7 +143,7 @@ span {
 
 }
 
-.descripcionP {
+.descriptionP {
     display: grid;
     justify-content: center;
 }
@@ -164,21 +163,21 @@ span {
     font-weight: 600;
 }
 
-.articulo__arrow {
+.article__arrow {
     transition: transform .3s;
 }
 
-.articulo__arrow--rotate {
+.article__arrow--rotate {
     transform: rotate(180deg);
     filter: hue-rotate(129deg);
 }
 
-.articulo__contenedor {
+.article__container {
     max-width: 450px;
     margin: 0 auto;
 }
 
-.articulo__pregunta {
+.article__question {
     font-size: 1rem;
     font-weight: 600;
     padding: 1.6rem 0;
@@ -191,26 +190,26 @@ span {
     cursor: pointer;
 }
 
-.articulo__content {
+.article__content {
     display: grid;
     border-bottom: 2px solid hsl(229, 31%, 21%);
     grid-template-rows: 0fr;
     transition: grid-template-rows .3s;
 }
 
-.articulo__content--mostrar {
+.article__content--show {
     grid-template-rows: 1fr;
 }
 
-.articulo__mostrar {
+.article__show {
     overflow: hidden;
 }
 
-.articulo__respuesta {
+.article__response {
     padding: 1.3rem;
     text-align: left;
     padding-top: 0;
-    color: var(#1c1c1c);
+    color: black;
 }
 
 .content-Personaje {
@@ -237,9 +236,8 @@ span {
         object-fit: cover;
         object-position: top;
     }
-    
 }
 
-.centrar{
+.center {
     text-align: center;
 }
